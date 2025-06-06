@@ -26,9 +26,9 @@ public class GUI extends JFrame {
     }
 
     private void initializeUI() {
-        setTitle("Армия Саурона");
+        setTitle("Менеджер Армии Саурона");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setSize(800, 600);
+        setSize(600, 450);
         setLayout(new BorderLayout());
         setLocationRelativeTo(null);
 
@@ -37,9 +37,9 @@ public class GUI extends JFrame {
 
         JPanel controlPanel = createControlPanel();
 
-        infoPanel.setBorder(BorderFactory.createTitledBorder("Информация об орке"));
+        infoPanel.setBorder(BorderFactory.createTitledBorder("Об орке: "));
 
-        add(controlPanel, BorderLayout.NORTH);
+        add(controlPanel, BorderLayout.SOUTH);
         add(new JScrollPane(tree), BorderLayout.WEST);
         add(new JScrollPane(infoPanel), BorderLayout.CENTER);
     }

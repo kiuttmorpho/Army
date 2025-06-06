@@ -11,7 +11,7 @@ public class ArmyTree {
     private final Map<String, DefaultMutableTreeNode> tribeNodes;
 
     public ArmyTree() {
-        this.rootNode = new DefaultMutableTreeNode("Армия Мордора");
+        this.rootNode = new DefaultMutableTreeNode("Армия");
         this.treeModel = new DefaultTreeModel(rootNode);
         this.tribeNodes = new HashMap<>();
         initializeTribeNodes();
