@@ -30,6 +30,7 @@ public class GUI extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(800, 600);
         setLayout(new BorderLayout());
+        setLocationRelativeTo(null);
 
         tree.setRootVisible(true);
         tree.addTreeSelectionListener(e -> updateOrcInfo());
